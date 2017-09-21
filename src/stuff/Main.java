@@ -3,6 +3,10 @@ package stuff;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+
+        GroundGrunt grunt = new GroundGrunt();
+        ArtilleryGrunt grunt1 = new ArtilleryGrunt();
+
+        }
     }
-}
+
