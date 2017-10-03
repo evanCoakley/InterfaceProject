@@ -20,7 +20,7 @@ package stuff;
 
      @Override
      protected String speak() {
-         return "Don't mean nothin";
+         return "BLOW IT ALL TO HELL";
      }
 
      @Override
