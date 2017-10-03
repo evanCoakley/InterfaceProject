@@ -9,22 +9,24 @@ public abstract class Soldier {
     protected boolean tired;
 
 
-    protected void speak(){
-        System.out.println("HOORRAAHH");
-    }
+    protected abstract String speak();
 
-    protected void march(){
+
+    protected void march() {
         this.steps += 1;
         System.out.println("Marching");
     }
-    protected void sleepyTime(){
+
+    protected String sleepyTime() {
         this.tired = true;
-        System.out.println("Can't move another inch");
+        return "Can't move another inch";
     }
-    protected void stuffFace(){
+
+    protected void stuffFace() {
         this.hungry = true;
         System.out.println("Pork and beans AGAIN??");
     }
+
 
     public String getName() {
         return name;
@@ -49,5 +51,10 @@ public abstract class Soldier {
     public void setSerialNumber(int serialNumber) {
         this.serialNumber = serialNumber;
     }
+
+    public int getSteps() {
+        return steps;
+    }
+
 }
 
